@@ -4,7 +4,7 @@
 
 Recipe Randomizer is a simple web application that allows users to generate a random recipe. The application is built using Flask, a micro web framework written in Python. The application uses a SQLite database to store the recipes and displays a random recipe upon user request.
 
-The dataset used in this project comes from the "Food Ingredients and Recipes Dataset with Images" from the Epicurious Website, available on Kaggle. 
+The dataset used in this project comes from the "Food Ingredients and Recipes Dataset with Images" from the Epicurious Website, available on Kaggle from [here](https://www.kaggle.com/datasets/pes12017000148/food-ingredients-and-recipe-dataset-with-images).
 
 ## Installation
 
