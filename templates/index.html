@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe Randomizer</title>
+    </head>
+    <body>
+        {% if recipe %}
+            <h1>{{ recipe.title }}</h1>
+            <img src="{{ recipe.image }}" height="300px" width="400px" alt="Image of the recipe" />
+            <h2>Ingredients:</h2>
+            <p>{{ recipe.ingredients }}</p>
+            <h2>Instructions:</h2>
+            <p>{{ recipe.instructions }}</p>
+        {% else %}
+            <h1>No recipe yet</h1>
+        {% endif %}
+        <form method="POST">
+            <input type="submit" value="Generate">
+        </form>
+    </body>
+</html>
