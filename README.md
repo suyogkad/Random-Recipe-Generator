@@ -21,7 +21,7 @@ Visit `localhost:5000` in your web browser. You will be presented with a random 
 
 ## License
 
-The dataset used in this application is licensed under CC BY-SA 3.0. The source code for this application is licensed under the MIT License.
+The dataset used in this application is licensed under CC BY-SA 3.0.
 
 ## Acknowledgments
 
