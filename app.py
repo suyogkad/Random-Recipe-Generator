@@ -15,7 +15,7 @@ def home():
 
         recipe_dict = {
             'title': recipe[1],
-            'ingredients': recipe[2],
+            'ingredients': recipe[2].replace("[", "").replace("]", "").replace("\"", "").replace("\'", "").split(", "),
             'instructions': recipe[3],
             'image': '/static/images/' + recipe[4] + '.jpg'
         }

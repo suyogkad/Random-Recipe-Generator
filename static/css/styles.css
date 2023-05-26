@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header p {
+    margin: 0;
+    font-size: 18px;
+    color: #6c757d;
+}
+
+.header .generate-button {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.header .report-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

@@ -4,21 +4,42 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/styles.css">
         <title>Recipe Randomizer</title>
     </head>
     <body>
-        {% if recipe %}
-            <h1>{{ recipe.title }}</h1>
-            <img src="{{ recipe.image }}" height="300px" width="400px" alt="Image of the recipe" />
-            <h2>Ingredients:</h2>
-            <p>{{ recipe.ingredients }}</p>
-            <h2>Instructions:</h2>
-            <p>{{ recipe.instructions }}</p>
-        {% else %}
-            <h1>No recipe yet</h1>
-        {% endif %}
-        <form method="POST">
-            <input type="submit" value="Generate">
-        </form>
+        <div class="header">
+            <p>Hi, How are you doing today?</p>
+            <form class="generate-button" method="POST">
+                <input type="submit" value="Generate">
+            </form>
+            <a href="mailto:developer.npl@proton.me?subject=Report Something&body=Describe your issue here.">
+                <img src="/static/images/report_icon.png" class="report-icon" alt="Report Something">
+            </a>
+        </div>
+        <header>
+            <h1>Recipe Randomizer</h1>
+        </header>
+        <div class="main-content">
+            {% if recipe %}
+                <div class="recipe-card">
+                    <h2 class="recipe-title">{{ recipe.title }}</h2>
+                    <img class="recipe-image" src="{{ recipe.image }}" alt="Image of the recipe" />
+                    <div class="recipe-ingredients">
+                        <h3>Ingredients:</h3>
+                        <p>{{ recipe.ingredients }}</p>
+                    </div>
+                    <div class="recipe-instructions">
+                        <h3>Instructions:</h3>
+                        <p>{{ recipe.instructions }}</p>
+                    </div>
+                </div>
+            {% else %}
+                <h2>No recipe yet</h2>
+            {% endif %}
+            <!-- <form method="POST">
+                <input class="generate-button" type="submit" value="Generate">
+            </form> -->
+        </div>
     </body>
 </html>
